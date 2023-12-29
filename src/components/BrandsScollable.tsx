@@ -19,7 +19,7 @@ const cards = [
 export default function BrandScrollableSection() {
 
     return (
-        <div className="flex flex-col gap-8 p-4 lg:p-16 bg-slate-900 text-white">
+        <div className="flex flex-col gap-8 p-4 lg:p-16 text-white">
             <h2 className="text-4xl font-normal font-georgia">RESHAPING THE INDUSTRY WITH RESPONSIBLE AI</h2>
             <hr />
             <Carousel className="w-full" opts={{ loop: true, align: "start" }}>
