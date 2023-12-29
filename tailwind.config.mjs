@@ -70,7 +70,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-				'SpaceGrotesk': ['"Space Grotesk"', 'sans-serif']
+				'SpaceGrotesk': ['"Space Grotesk"', 'sans-serif'],
+        'georgia': ['Georgia', 'Times New Roman', 'Times', 'serif'],
 			},
     },
   },
