@@ -21,11 +21,11 @@ export default function ParallaxSectionGroup() {
     const parallax = useRef<IParallax>(null!)
     return (
         <div className='w-screen h-screen bg-slate-950'>
-            <Parallax ref={parallax} pages={3}>
+            <Parallax ref={parallax} pages={4}>
                 <ParallaxLayer
                     offset={0}
                     speed={0}
-                    factor={3}
+                    factor={4}
                     style={{
                         backgroundImage: url('stars', true),
                         backgroundSize: 'cover',
@@ -39,17 +39,21 @@ export default function ParallaxSectionGroup() {
                 <ParallaxLayer offset={2.9} speed={0.5}>
                     <Footer />
                 </ParallaxLayer>
+                
+                <ParallaxLayer offset={0.2} speed={0.5}>
+                    <Hero />
+                </ParallaxLayer>
 
                 {/* <ParallaxLayer offset={0.5} speed={1}>
                     <IndustryGrid />
                 </ParallaxLayer> */}
-                <ParallaxLayer offset={0.5} speed={1}>
+                <ParallaxLayer offset={1} speed={0.5}>
                     <BrandsScollable />
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.2} speed={1}>
+                <ParallaxLayer offset={1.9} speed={0.5}>
                     <AgendaTimeline />
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={1}>
+                <ParallaxLayer offset={2.8} speed={0.5}>
                     <FAQs />
                 </ParallaxLayer>
             </Parallax>
