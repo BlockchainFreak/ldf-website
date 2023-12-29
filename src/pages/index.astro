@@ -6,7 +6,7 @@ import CTA from "../components/CTA.astro"
 import Speakers from "../components/Speakers.astro"
 import IndustryGrid from "../components/IndustryGrid.astro"
 import BrandsScollable from "../components/BrandsScollable.astro"
-import AgendaTimeline from "../components/AgendaTimeline.astro"
+import AgendaTimeline from "../components/AgendaTimeline.tsx"
 import EventConventions from "../components/EventConventions.astro"
 import Sponsors from "../components/Sponsors.astro"
 import FAQs from "../components/FAQs.tsx"
@@ -14,14 +14,14 @@ import Footer from "../components/Footer.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="m-4 flex flex-col gap-4 bg-[#f2f2f2]">
+	<main class="flex flex-col gap-4 bg-[#f2f2f2]">
 		<Header client:load/>
 		<Hero />
 		<CTA />
 		<Speakers />
 		<IndustryGrid />
 		<BrandsScollable />
-		<AgendaTimeline />
+		<AgendaTimeline client:load/>
 		<EventConventions />
 		<Sponsors />
 		<FAQs client:load/>
