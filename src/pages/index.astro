@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from "../components/Header.astro"
+import Header from "../components/Header.tsx"
 import Hero from "../components/Hero.astro"
 import CTA from "../components/CTA.astro"
 import Speakers from "../components/Speakers.astro"
@@ -15,7 +15,7 @@ import Footer from "../components/Footer.astro"
 
 <Layout title="Welcome to Astro.">
 	<main class="m-4 flex flex-col gap-4">
-		<Header />
+		<Header client:load/>
 		<Hero />
 		<CTA />
 		<Speakers />
