@@ -14,7 +14,7 @@ const tabs = [
 const Navigation = () => {
     return (
         <div className="flex flex-row lg:space-x-8 py-3 px-6 lg:px-32 justify-between items-center bg-black text-white">
-            <img src="/images/frame.svg" className="" />
+            <img src="/ldf-logo.svg" className="w-24" />
 
             {/* Dropdown for small screens */}
             <div className="lg:hidden">
