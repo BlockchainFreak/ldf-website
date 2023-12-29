@@ -6,6 +6,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 const cards = [
     { bg: "/tertiary-card-1.svg", text: "Hear from the biggest luminaries in AI" },
@@ -22,7 +23,10 @@ export default function BrandScrollableSection() {
         <div className="flex flex-col gap-8 p-4 lg:p-16 text-white">
             <h2 className="text-4xl font-normal font-georgia">RESHAPING THE INDUSTRY WITH RESPONSIBLE AI</h2>
             <hr />
-            <Carousel className="w-full" opts={{ loop: true, align: "start" }}>
+            <Carousel className="w-full"
+                opts={{ loop: true, align: "start" }}
+                plugins={[Autoplay({ delay: 2000 })]}
+            >
                 <CarouselPrevious />
                 <CarouselContent>
                     {cards.map((card, index) => (
