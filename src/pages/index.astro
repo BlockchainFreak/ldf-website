@@ -5,7 +5,7 @@ import Hero from "../components/Hero.astro"
 import CTA from "../components/CTA.astro"
 import Speakers from "../components/Speakers.astro"
 import IndustryGrid from "../components/IndustryGrid.astro"
-import BrandsScollable from "../components/BrandsScollable.astro"
+import BrandsScollable from "../components/BrandsScollable.tsx"
 import AgendaTimeline from "../components/AgendaTimeline.tsx"
 import EventConventions from "../components/EventConventions.astro"
 import Sponsors from "../components/Sponsors.astro"
@@ -20,11 +20,11 @@ import Footer from "../components/Footer.astro"
 		<CTA />
 		<Speakers />
 		<IndustryGrid />
-		<BrandsScollable />
+		<BrandsScollable client:load/>
 		<AgendaTimeline client:load/>
 		<EventConventions />
 		<Sponsors />
 		<FAQs client:load/>
 		<Footer />
 	</main>
-</Layout>
+</Layout>../components/BrandsScollable.tsx/index.ts
