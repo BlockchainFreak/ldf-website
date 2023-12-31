@@ -1,88 +1,49 @@
-
-
-<section class="border border-solid border-black w-full min-h-96">
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Footer</title>
-    <style>
-        body {
-            background-color: #000;
-            margin: 80px 60px 0px 60px;
-        }
-    </style>
-</head>
-
-<body class="text-black">
-
-    <footer class="py-8 mx-4 my-4">
-
-        <!-- Logo and Contact -->
-        <div class="flex justify-between items-center mb-4">
-            <!-- Logo -->
-            <div class="mr-4">
-                <img src="path/to/your/logo.png" alt="Logo" class="h-8">
-            </div>
-
-            <!-- Contact -->
-            <div class="text-blue-500">
-                <p>Contact</p>
-            </div>
-        </div>
-
-        <!-- Mission Statement and Address -->
-        <div class="flex justify-between mb-4">
-            <!-- Mission Statement -->
-            <div>
+<footer class="border border-solid border-black w-full min-h-96 p-4">
+    <div class="container mx-auto m-16">
+        <div class="flex justify-between items-center">
+            <!-- Left Container: Logo, Mission Statement, and Social Media Icons -->
+            <div class="flex flex-col space-y-6 items-start ml-6"> 
+                <img src="/public/poster.svg" alt="Logo" class="h-12"> 
                 <p class="text-gray-300">Tech. Design. Reimagine.</p>
+                <div class="flex space-x-2">
+                    <a href="#" class="text-white">
+                        <img src="/public/instagram.svg" alt="Instagram" class="h-9">
+                    </a>
+    
+                    <a href="#" class="text-white">
+                        <img src="/public/twitterx.svg" alt="X" class="h-8">
+                    </a>
+
+                    <a href="#" class="text-white">
+                        <img src="/public/linkedin.svg" alt="LinkedIn" class="h-9">
+                    </a>
+                    
+                    <a href="#" class="text-white">
+                        <img src="/public/tiktok.svg" alt="TikTok" class="h-9">
+                    </a>  
+                </div>
             </div>
 
-            <!-- Address -->
-            <div>
-                <p class="text-sm text-green-300">LUMS, Sector U, DHA Phase V<br>Lahore, Pakistan</p>
-            </div>
-        </div>
-
-        <!-- Social Media Icons -->
-        <div class="flex justify-start items-center mb-4">
-            <a href="#" class="text-white mr-4"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white mr-4"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white mr-4"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-white mr-4"><i class="fab fa-tiktok"></i></a>
-        </div>
-
-        <!-- Email -->
-        <div class="flex justify-end mb-4">
-            <div>
-                <p class="text-sm text-green-300">index@lums.edu.pk</p>
-            </div>
-        </div>
-
-        <!-- Phone Number -->
-        <div class="flex justify-end mb-4">
-            <div>
-                <p class="text-sm text-green-300">+112 4322 221</p>
+            <!-- Right Container: Contact, Address, Email, and Phone Number -->
+            <div class="flex flex-col space-y-10 mr-6">
+                <p class="text-blue-500">Contact</p>
+                <div class="flex flex-col space-y-2">
+                    <p class="text-sm text-green-300">LUMS, Sector U, DHA Phase V<br>Lahore, Pakistan</p><br>
+                    <p class="text-sm text-green-300">index@lums.edu.pk</p>
+                    <p class="text-sm text-green-300">+112 4322 221</p>
+                </div>
             </div>
         </div>
         <br>
-
-        <!-- Bottom Links -->
+        <!-- Bottom Links Container -->
         <div class="flex justify-center mt-4">
-            <a href="#" class="text-sm text-green-300 mr-4">@2023 Index</a>
-            <a href="#" class="text-sm text-green-300 mr-4">Code of Conduct</a>
-            <a href="#" class="text-sm text-green-300 mr-4">Privacy Policy</a>
-            <a href="#" class="text-sm text-green-300 mr-4">Contact us</a>
+            <a href="#" class="text-sm text-green-300 mr-4">@2023 Index </a>
+            <a href="#" class="text-sm text-green-300 mr-4"> Code of Conduct </a>
+            <a href="#" class="text-sm text-green-300 mr-4"> Privacy Policy </a>
+            <a href="#" class="text-sm text-green-300"> Contact us</a>
         </div>
 
-    </footer>
+    </div>
+    
+</footer>
 
-</body>
-
-</html>
-
-</section>
