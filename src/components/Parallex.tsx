@@ -7,11 +7,10 @@ import Header from "@/components/Header.tsx"
 import Hero from "@/components/Hero.tsx"
 import CTA from "@/components/CTA.tsx"
 import Speakers from "@/components/Speakers.tsx"
-// import EventConventions from "@/components/EventConventions.tsx"
-// import Sponsors from "@/components/Sponsors.tsx"
-// import FAQs from "@/components/FAQs.tsx"
+import EventConventions from "@/components/EventConventions.tsx"
+import Sponsors from "@/components/Sponsors.tsx"
+import FAQs from "@/components/FAQs.tsx"
 import Footer from "@/components/Footer.tsx"
-import FAQs from './FAQs'
 
 // Little helpers ...
 const url = (name: string, wrap = false) =>
@@ -21,10 +20,10 @@ export default function ParallaxSectionGroup() {
     const parallax = useRef<IParallax>(null!)
     return (
         <div className='w-screen h-screen bg-slate-950'>
-            <Parallax ref={parallax} pages={4}>
+            <Parallax ref={parallax} pages={16}>
                 <ParallaxLayer
                     offset={0}
-                    speed={0}
+                    speed={0.4}
                     factor={4}
                     style={{
                         backgroundImage: url('stars', true),
@@ -32,29 +31,22 @@ export default function ParallaxSectionGroup() {
                     }}
                 />
 
-                <ParallaxLayer offset={0} speed={0.5}>
-                    <Header />
-                </ParallaxLayer>
-
-                <ParallaxLayer offset={2.9} speed={0.5}>
-                    <Footer />
-                </ParallaxLayer>
-                
-                <ParallaxLayer offset={0.2} speed={0.5}>
-                    <Hero />
-                </ParallaxLayer>
-
-                {/* <ParallaxLayer offset={0.5} speed={1}>
-                    <IndustryGrid />
-                </ParallaxLayer> */}
-                <ParallaxLayer offset={1} speed={0.5}>
-                    <BrandsScollable />
-                </ParallaxLayer>
-                <ParallaxLayer offset={1.9} speed={0.5}>
-                    <AgendaTimeline />
-                </ParallaxLayer>
-                <ParallaxLayer offset={2.8} speed={0.5}>
-                    <FAQs />
+                <ParallaxLayer offset={0} speed={0}>
+                    <div className="flex flex-col gap-12">
+                        <Header />
+                        <Hero />
+                        <CTA />
+                        <Speakers />
+                        <IndustryGrid />
+                        <BrandsScollable />
+                        <AgendaTimeline />
+                        <EventConventions />
+                        <div>
+                            <Sponsors />
+                            <FAQs />
+                        </div>
+                        <Footer />
+                    </div>
                 </ParallaxLayer>
             </Parallax>
         </div>
