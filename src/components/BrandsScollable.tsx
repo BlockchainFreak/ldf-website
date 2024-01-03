@@ -1,49 +1,68 @@
-import { Card, CardContent } from "@/components/ui/card"
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
+const brands = [
+    {
+        person: "Asif Akram",
+        logo: "/systems-logo.svg",
+        image: "/asif-akram.png",
+        title: "Opening Keynote: The Future of Work, Workspaces, and Remote Work",
+        position: "COO, Systems Limited"
+    },
+    {
+        person: "Asif Akram",
+        logo: "/systems-logo.svg",
+        image: "/asif-akram.png",
+        title: "Opening Keynote: The Future of Work, Workspaces, and Remote Work",
+        position: "COO, Systems Limited"
+    },
+    {
+        person: "Asif Akram",
+        logo: "/systems-logo.svg",
+        image: "/asif-akram.png",
+        title: "Opening Keynote: The Future of Work, Workspaces, and Remote Work",
+        position: "COO, Systems Limited"
+    },
+] satisfies BrandCardProps[]
 
-const cards = [
-    { bg: "/tertiary-card-1.svg", text: "Hear from the biggest luminaries in AI" },
-    { bg: "/tertiary-card-2.svg", text: "See our groundbreaking AI roadmap" },
-    { bg: "/tertiary-card-3.svg", text: "Attend a world- class AI seminar" },
-    { bg: "/tertiary-card-1.svg", text: "Hear from the biggest luminaries in AI" },
-    { bg: "/tertiary-card-2.svg", text: "See our groundbreaking AI roadmap" },
-    { bg: "/tertiary-card-3.svg", text: "Attend a world- class AI seminar" },
-]
-
-export default function BrandScrollableSection() {
-
+export default function BrandsSection() {
     return (
-        <div className="flex flex-col gap-8 p-4 lg:p-16 text-white">
-            <h2 className="text-4xl font-normal font-georgia">RESHAPING THE INDUSTRY WITH RESPONSIBLE AI</h2>
-            <hr />
-            <Carousel className="w-full"
-                opts={{ loop: true, align: "start" }}
-                plugins={[Autoplay({ delay: 2000 })]}
-            >
-                <CarouselPrevious />
-                <CarouselContent>
-                    {cards.map((card, index) => (
-                        <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                            <div className="p-1">
-                                <Card className="border-black rounded-3xl"
-                                    style={{ backgroundImage: `url("${card.bg}")`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-                                    <CardContent className="flex aspect-square p-12">
-                                        <span className="text-white text-4xl font-semibold">{card.text}</span>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
-                    ))}
-                </CarouselContent>
-                <CarouselNext />
-            </Carousel>
+        <section className="flex flex-col gap-8 p-4 lg:p-16 text-white">
+            <div className="flex justify-between">
+                <h2 className="text-4xl font-normal font-georgia">LEARN FROM THE WORLD’S LEADING BRANDS</h2>
+                <button className="bg-white py-4 px-12 text-lg font-semibold text-black rounded-[4rem]">View All Speakers →</button>
+            </div>
+
+            <div className="overflow-x-auto overflow-y-auto">
+                <div className="flex gap-6">
+                    {brands.map((brand, i) => <BrandsCard {...brand} key={i} />)}
+                </div>
+            </div>
+        </section>
+    )
+}
+
+type BrandCardProps = {
+    title: string;
+    person: string;
+    position: string;
+    logo: `/${string}`;
+    image: `/${string}`;
+}
+
+function BrandsCard({ person, position, logo, image, title }: BrandCardProps) {
+    return (
+        <div className="flex flex-col flex-shrink-0 w-80 lg:w-[28rem] gap-2 bg-black rounded-3xl font-gerorgia" id="brands">
+            <div className="flex flex-col gap-2 p-4">
+                <div className="w-36">
+                    <img src={logo} />
+                </div>
+                <h3 className="text-2xl mb-4 font-normal">{title}</h3>
+                <div className="font-normal mb-8 text-base">
+                    <h5>{person}</h5>
+                    <p>{position}</p>
+                </div>
+            </div>
+            <div>
+                <img src={image} />
+            </div>
         </div>
     )
 }
