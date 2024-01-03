@@ -28,7 +28,7 @@ const Navigation = () => {
                         {
                             tabs.map((tab) => (
                                 <DropdownMenuItem key={tab.name}>
-                                    <a>{tab.name}</a>
+                                    <a href={tab.href}>{tab.name}</a>
                                 </DropdownMenuItem>
                             ))
                         }
