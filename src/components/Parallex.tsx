@@ -12,10 +12,6 @@ import Sponsors from "@/components/Sponsors.tsx"
 import FAQs from "@/components/FAQs.tsx"
 import Footer from "@/components/Footer.tsx"
 
-// Little helpers ...
-const url = (name: string, wrap = false) =>
-    `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-
 export default function ParallaxSectionGroup() {
     const parallax = useRef<IParallax>(null!)
     return (
@@ -26,7 +22,16 @@ export default function ParallaxSectionGroup() {
                     speed={0.4}
                     factor={4}
                     style={{
-                        backgroundImage: url('stars', true),
+                        backgroundImage: 'url(/stars.svg)',
+                        backgroundSize: 'cover',
+                    }}
+                />
+                <ParallaxLayer
+                    offset={4}
+                    speed={0.4}
+                    factor={4}
+                    style={{
+                        backgroundImage: 'url(/stars.svg)',
                         backgroundSize: 'cover',
                     }}
                 />
@@ -44,8 +49,8 @@ export default function ParallaxSectionGroup() {
                         <div>
                             <Sponsors />
                             <FAQs />
+                            <Footer />
                         </div>
-                        <Footer />
                     </div>
                 </ParallaxLayer>
             </Parallax>
