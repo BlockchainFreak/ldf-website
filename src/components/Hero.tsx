@@ -10,7 +10,7 @@ export default function HeroSection() {
                 </div>
                 <div className="w-full flex flex-col gap-8 items-center">
                     <div className="flex justify-between text-white w-80 font-SpaceGrotesk">
-                        <span>JAN 19, 20, 21</span>
+                        <span>FEB 02, 03, 04</span>
                         <span className="text-gray-400">|</span>
                         <span>LAHORE</span>
                         <span className="text-gray-400">|</span>

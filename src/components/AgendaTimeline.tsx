@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSpring, animated } from "@react-spring/web"
 
-const dates = ["19", "20", "21"];
+const dates = ["02", "03", "04"];
 
 const timelineData = [
     [
@@ -68,7 +68,7 @@ export default function AgendaTimeline() {
                     className="w-[84%] flex gap-4 justify-normal lg:justify-between font-georgia pt-8 flex-col lg:flex-row"
                 >
                     <div className="w-64 flex flex-col gap-4 mr-4">
-                        <div className="text-6xl">January</div>
+                        <div className="text-6xl">February</div>
                         <div className="flex flex-row justify-between">
                             {
                                 dates.map((date, index) => (
