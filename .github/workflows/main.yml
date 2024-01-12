@@ -1,0 +1,38 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Set to the branch you want to deploy from
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'  # Set this to the Node.js version you need
+
+    - name: Install pnpm
+      run: npm install -g pnpm
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Build Astro project
+      run: pnpm run build
+
+    - name: Upload build to FTP
+      env:
+        FTP_PASS: ${{ secrets.FTP_PASS }}
+      run: |
+        # Make the script executable
+        chmod +x upload.sh
+
+        # Run the script
+        ./upload.sh
