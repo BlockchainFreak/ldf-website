@@ -1,0 +1,31 @@
+# BEGIN Custom Static Files Handling
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Serve astro_build/index.html as the default document for the root URL
+RewriteRule ^$ /astro_build/index.html [L]
+
+# Rewrite requests for assets, assuming they are all located within the astro_build directory
+RewriteCond %{DOCUMENT_ROOT}/astro_build%{REQUEST_URI} -f
+RewriteRule ^(.*)$ /astro_build/$1 [L]
+
+</IfModule>
+# END Custom Static Files Handling
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+# Exclude anything in the astro_build directory from being processed by WordPress
+RewriteCond %{REQUEST_URI} !^/astro_build/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

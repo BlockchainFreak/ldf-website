@@ -38,7 +38,7 @@ const data = [
 
 export default function FAQs() {
     return (
-        <section className="flex flex-col items-center px-16 py-12 font-georgia">
+        <section className="flex flex-col items-center px-16 py-12 font-georgia bg-[#f2f2f2]">
             <div className="w-full gap-2 mb-12">
                 <p className="text-4xl mb-4">FAQs</p>
                 <p className="text-2xl text-zinc-500">All your most pressing questions, answered.</p>

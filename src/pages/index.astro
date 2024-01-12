@@ -1,30 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from "../components/Header.tsx"
-import Hero from "../components/Hero.astro"
-import CTA from "../components/CTA.astro"
-import Speakers from "../components/Speakers.astro"
-import IndustryGrid from "../components/IndustryGrid.astro"
-import BrandsScollable from "../components/BrandsScollable.tsx"
-import AgendaTimeline from "../components/AgendaTimeline.tsx"
-import EventConventions from "../components/EventConventions.astro"
-import Sponsors from "../components/Sponsors.astro"
-import FAQs from "../components/FAQs.tsx"
-import Footer from "../components/Footer.astro"
+import ParallaxGroup from '@/components/Parallex.tsx';
 ---
 
 <Layout title="Lahore Design Festival">
 	<main class="flex flex-col gap-4 bg-[#f2f2f2]">
-		<Header client:load/>
-		<Hero />
-		<CTA />
-		<Speakers />
-		<IndustryGrid />
-		<BrandsScollable client:load/>
-		<AgendaTimeline client:load/>
-		<EventConventions />
-		<Sponsors />
-		<FAQs client:load/>
-		<Footer />
+		<ParallaxGroup client:load/>
 	</main>
-</Layout>../components/BrandsScollable.tsx/index.ts
+</Layout>
