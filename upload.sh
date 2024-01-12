@@ -4,11 +4,10 @@
 FTP_HOST="ftp.lahoredesignfestival.com"
 FTP_USER="emperien_ldf_ftp_user"
 
-# Log in to FTP server and upload contents of /dist
-ftp -inv $FTP_HOST <<EOF
+# Log in to FTP server and upload contents of /dist recursively
+lftp -e "
+open $FTP_HOST
 user $FTP_USER $FTP_PASS
-binary
-cd /astro_build
-mput dist/*
+mirror --reverse --verbose dist /astro_build
 bye
-EOF
+"

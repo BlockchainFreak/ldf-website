@@ -18,6 +18,9 @@ jobs:
       with:
         node-version: '20'  # Set this to the Node.js version you need
 
+    - name: Install Sophisticated FTP Tool
+      run: sudo apt-get update && sudo apt-get install -y lftp
+
     - name: Install pnpm
       run: npm install -g pnpm
 
@@ -25,7 +28,7 @@ jobs:
       run: pnpm install
 
     - name: Build Astro project
-      run: pnpm run build
+      run: pnpm astro build
 
     - name: Upload build to FTP
       env:
