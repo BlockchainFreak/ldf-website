@@ -1,0 +1,56 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.tsx";
+import Footer from "@/components/Footer.tsx";
+import MemberInfo from "@/components/MemberInfo.astro";
+---
+
+<Layout title="Lahore Design Festival">
+    <main class="flex flex-col bg-black">
+        <Header />
+        <section class="relative w-screen h-screen">
+            <img
+                src="/Hazur-Palace.png"
+                alt="Hazur Palace"
+                class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 flex justify-center items-center">
+                <span
+                    class="text-white font-bold font-secondary text-5xl md:text-7xl"
+                    >About Us</span
+                >
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96">
+            <div class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
+                <MemberInfo
+                    name="Taneer Jannat"
+                    title="President INDEX"
+                    quote="Being a part of LDF has been an incredible honor."
+                    email="hmbugvi@gmail.com"
+                />
+                <img src="/members/bugvi.png" />
+            </div>
+
+            <div class="flex flex-col gap-8 font-normal text-xl">
+                <p>
+                    INDEX is a student-run society in LUMS that primarily
+                    focuses on problem-solving and designing innovative
+                    solutions to conventional problems. INDEX actively works to
+                    develop a thriving design community throughout Pakistan by
+                    promoting design in every sphere of life.
+                </p>
+                <p>
+                    Team INDEX encourages design thinking and provides a
+                    collaborative platform to beginners and professionals alike.
+                    Our inclusive culture thrives upon monthly Design Workshops,
+                    hands-on interactive sessions with industry experts,
+                    impact-ridden social responsibility projects and our
+                    flagship mega-event: the Lahore Design Festival.
+                </p>
+            </div>
+        </section>
+        <Footer />
+    </main>
+</Layout>

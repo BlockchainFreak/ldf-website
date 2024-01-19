@@ -1,43 +1,19 @@
+const sponsors = Array.from({ length: 18 }, (_, i) => i)
 export default function Sponsors() {
     return (
-        <section className="bg-[#f2f2f2] w-full p-4 lg:p-16" id="sponsors">
+        <section className="bg-[#f2f2f2] w-full p-4 lg:p-10" id="sponsors">
             <h2 className="text-start ml-8 text-3xl weight-400 text-[#181818] font-georgia pt-10 mb-2">
                 SPONSORS
             </h2>
             <div className="container">
-                <h3 className="text-xl ml-0 mb-8 font-georgia weight-400 text-[#767676] ">Platinum</h3>
-                <div className="flex flex-col items-start">
-                    <img src="sponsors/sp1.png" alt="Placeholder logo" className="w-25 h-25  mb-5" />
-                    <p className="text-left font-georgia text-sm text-[#767676] w-1/2 mb-3">Whether your team works on a different floor or around the
-                        globe, distance doesn’t matter. They can collaborate as if
-                        sitting in the same room. Let our experts work with you to
-                        solve your voice and collaboration challenges and accelerate
-                        outcomes. Your business deserves the AT&T Business
-                        difference.</p>
-                </div>
-                <hr className="mb-4" />
-                <h3 className="text-xl ml-0 mb-2 font-georgia weight-400 text-[#767676] ">Gold</h3>
-                <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-                    <img src="sponsors/sp2.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                    <img src="sponsors/sp3.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                    <img src="sponsors/sp4.png" alt="Placeholder logo" className="w-30 h-20 mx-auto" />
-                    <img src="sponsors/sp15.png" alt="Placeholder logo" className="w-30 h-15 mx-auto" />
-                    <img src="sponsors/sp13.png" alt="Placeholder logo" className="w-25 h-15 mx-auto" />
-                    <img src="sponsors/sp7.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                </div>
-                <hr className="mb-4" />
-                <h3 className="text-xl ml-0 mb-2 font-georgia weight-400 text-[#767676] ">Silver</h3>
-                <div className="grid grid-cols-3 gap-4 mb-8">
-                    <img src="sponsors/sp8.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                    <img src="sponsors/sp9.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                    <img src="sponsors/sp14.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                </div>
-                <hr className="mb-4" />
-                <h3 className="text-xl ml-0 mb-2 font-georgia weight-400 text-[#767676]">Bronze</h3>
-                <div className="grid grid-cols-3 gap-4 mb-8">
-                    <img src="sponsors/sp10.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                    <img src="sponsors/sp11.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
-                    <img src="sponsors/sp12.png" alt="Placeholder logo" className="w-20 h-20 mx-auto" />
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-12 gap-x-16">
+                    {
+                        sponsors.map((_, i) => (
+                            <div className="flex justify-center items-center">
+                                <img src={`/sponsors/sp${i + 1}.png`} width="200" height="150" />
+                            </div>
+                        ))
+                    }
                 </div>
                 <hr className="mb-10" />
                 <div className="container mx-auto p-4 ">

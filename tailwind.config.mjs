@@ -72,6 +72,11 @@ module.exports = {
       fontFamily: {
 				'SpaceGrotesk': ['"Space Grotesk"', 'sans-serif'],
         'georgia': ['Georgia', 'Times New Roman', 'Times', 'serif'],
+
+        // Primary Font
+        'primary': ['"Space Grotesk"', 'sans-serif'],
+        // Secondary Font for Headings
+        'secondary': ['"Open Sans"', 'sans-serif'],
 			},
     },
   },

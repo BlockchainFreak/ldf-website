@@ -61,7 +61,7 @@ export default function AgendaTimeline() {
     });
 
     return (
-        <section className="p-4 lg:p-16 flex flex-col gap-4 text-white">
+        <section className="m-4 lg:m-16 flex flex-col gap-4 text-white">
             <div className="text-4xl font-normal font-georgia">AGENDA AT A GLANCE</div>
             <div className="bg-black h-[40rem] w-full p-4 lg:p-12 bg-opacity-50 flex lg:justify-end">
                 <div
@@ -101,12 +101,12 @@ export default function AgendaTimeline() {
                                 </tbody>
                             </table>
                         </animated.div>
-                        <div>
+                        {/* <div>
                             * These sessions will be live streamed for virtual attendees
                             <br />
                             All times listed in Pacific Daylight Time and subject to
                             change
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

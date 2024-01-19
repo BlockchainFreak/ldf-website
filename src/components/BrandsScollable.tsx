@@ -26,7 +26,7 @@ export default function BrandsSection() {
     return (
         <section className="flex flex-col gap-8 p-4 lg:p-16 text-white">
             <div className="flex justify-between">
-                <h2 className="text-4xl font-normal font-georgia">LEARN FROM THE WORLD’S LEADING BRANDS</h2>
+                <h2 className="text-4xl font-normal font-georgia">Our Partners</h2>
                 <button className="bg-white py-4 px-12 text-lg font-semibold text-black rounded-[4rem]">View All Speakers →</button>
             </div>
 

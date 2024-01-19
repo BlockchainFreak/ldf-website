@@ -5,10 +5,10 @@ const tabs = [
     { name: 'Info', href: '#' },
     { name: 'Talks', href: '#talks' },
     { name: 'Speakers', href: '#speakers' },
-    { name: 'Subevents', href: '#events' },
+    { name: 'Convention', href: '#events' },
     { name: 'Sponsors', href: '#sponsors' },
-    { name: 'Contact Us', href: '#contact' },
-    { name: 'About Us', href: '#about' },
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'About Us', href: '/about' },
 ]
 
 const Navigation = () => {
