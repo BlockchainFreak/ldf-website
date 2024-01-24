@@ -9,7 +9,7 @@ export default function Sponsors() {
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-12 gap-x-16">
                     {
                         sponsors.map((_, i) => (
-                            <div className="flex justify-center items-center">
+                            <div key={i} className="flex justify-center items-center">
                                 <img src={`/sponsors/sp${i + 1}.png`} width="200" height="150" />
                             </div>
                         ))

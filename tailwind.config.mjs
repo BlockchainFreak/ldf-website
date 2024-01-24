@@ -76,7 +76,7 @@ module.exports = {
         // Primary Font
         'primary': ['"Space Grotesk"', 'sans-serif'],
         // Secondary Font for Headings
-        'secondary': ['"Open Sans"', 'sans-serif'],
+        'secondary': ['"Montserrat"', 'sans-serif'],
 			},
     },
   },

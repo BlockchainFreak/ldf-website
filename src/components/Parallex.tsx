@@ -16,7 +16,7 @@ export default function ParallaxSectionGroup() {
     const parallax = useRef<IParallax>(null!)
     return (
         <div className='w-screen h-screen bg-slate-950'>
-            <Parallax ref={parallax} pages={16}>
+            {/* <Parallax ref={parallax} pages={16}>
                 <ParallaxLayer
                     offset={0}
                     speed={0.4}
@@ -34,10 +34,10 @@ export default function ParallaxSectionGroup() {
                         backgroundImage: 'url(/stars.svg)',
                         backgroundSize: 'cover',
                     }}
-                />
+                /> */}
 
-                <ParallaxLayer offset={0} speed={0}>
-                    <div className="flex flex-col gap-12">
+                {/* <ParallaxLayer offset={0} speed={0}> */}
+                    <div className="flex flex-col gap-12 bg-slate-950">
                         <Header />
                         <Hero />
                         <CTA />
@@ -52,8 +52,8 @@ export default function ParallaxSectionGroup() {
                             <Footer />
                         </div>
                     </div>
-                </ParallaxLayer>
-            </Parallax>
+                {/* </ParallaxLayer> */}
+            {/* </Parallax> */}
         </div>
     )
 }
