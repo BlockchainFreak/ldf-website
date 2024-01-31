@@ -4,29 +4,29 @@ import IndustryGrid from "@/components/IndustryGrid.tsx"
 import BrandsScollable from "@/components/BrandsScollable.tsx"
 import AgendaTimeline from "@/components/AgendaTimeline.tsx"
 import Header from "@/components/Header.tsx"
-import Hero from "@/components/Hero.tsx"
+import Hero from "@/components/Hero.astro"
 import CTA from "@/components/CTA.tsx"
 import Speakers from "@/components/Speakers.tsx"
 import EventConventions from "@/components/EventConventions.tsx"
 import Sponsors from "@/components/Sponsors.tsx"
 import FAQs from "@/components/FAQs.tsx"
-import Footer from "@/components/Footer.tsx"
+import Footer from "@/components/Footer.astro"
 ---
 
 <Layout title="Lahore Design Festival">
 	<main class="flex flex-col gap-4 font-primary bg-slate-950">
 		<Header client:idle />
-		<Hero client:idle />
+		<Hero />
 		<CTA client:idle />
 		<Speakers client:idle />
-		<IndustryGrid client:idle />
-		<BrandsScollable client:idle />
+		<!-- <IndustryGrid client:idle /> -->
+		<!-- <BrandsScollable client:idle /> -->
 		<AgendaTimeline client:idle />
 		<EventConventions client:idle />
 		<div>
 			<Sponsors client:idle />
 			<FAQs client:idle />
-			<Footer client:idle />
+			<Footer />
 		</div>
 	</main>
 </Layout>

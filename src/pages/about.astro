@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.tsx";
-import Footer from "@/components/Footer.tsx";
+import Footer from "@/components/Footer.astro";
 import MemberInfo from "@/components/MemberInfo.astro";
 ---
 
@@ -28,9 +28,11 @@ import MemberInfo from "@/components/MemberInfo.astro";
                     name="Taneer Jannat"
                     title="President INDEX"
                     quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
+                    email=""
                 />
-                <img src="/members/bugvi.png" />
+                <div class="square-aspect w-64">
+                    <img src="/members/taneer.jpg" />
+                </div>
             </div>
 
             <div class="flex flex-col gap-8 font-normal text-xl">

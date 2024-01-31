@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.tsx";
-import Footer from "@/components/Footer.tsx";
+import Footer from "@/components/Footer.astro";
 import MemberInfo from "@/components/MemberInfo.astro";
 ---
 
@@ -24,16 +24,20 @@ import MemberInfo from "@/components/MemberInfo.astro";
                     quote="Being a part of LDF has been an incredible honor."
                     email="hmbugvi@gmail.com"
                 />
-                <img src="/members/bugvi.png" />
+                <div class="square-aspect w-64">
+                    <img src="/members/bugvi.png" />
+                </div>
             </div>
             <div class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12">
                 <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
+                    name="Maham Bhimra"
                     title="Convenor"
                     quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
+                    email=""
                 />
-                <img src="/members/bugvi.png" />
+                <div class="square-aspect w-64">
+                    <img src="/members/bhimra.png" />
+                </div>
             </div>
         </section>
 
@@ -44,73 +48,28 @@ import MemberInfo from "@/components/MemberInfo.astro";
             </div>
             <div class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
                 <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
-                    title="Convenor"
+                    name="Danish Nadeem"
+                    title="Vice President - Communications"
                     quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
+                    email=""
                 />
-                <img src="/members/bugvi.png" />
+                <div class="square-aspect w-64">
+                    <img src="/members/danish.jpg" />
+                </div>
             </div>
             <div class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12">
                 <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
-                    title="Convenor"
+                    name="Rabia Zahid"
+                    title="Vice President - Events"
                     quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
+                    email=""
                 />
-                <img src="/members/bugvi.png" />
+                <div class="square-aspect w-64">
+                    <img src="/members/rabia.png" />
+                </div>
             </div>
         </section>
 
-        <!-- Marketing Section -->
-        <section class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96">
-            <div class="flex justify-center">
-                <h2 class="bg-white px-6 py-2 rounded-3xl w-48 text-black font-bold font-secondary text-center">Marketing</h2>
-            </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
-                <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
-                    title="Convenor"
-                    quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
-                />
-                <img src="/members/bugvi.png" />
-            </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12">
-                <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
-                    title="Convenor"
-                    quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
-                />
-                <img src="/members/bugvi.png" />
-            </div>
-        </section>
-
-        <!-- Events Section -->
-        <section class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96">
-            <div class="flex justify-center">
-                <h2 class="bg-white px-6 py-2 rounded-3xl w-48 text-black font-bold font-secondary text-center">Events</h2>
-            </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
-                <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
-                    title="Convenor"
-                    quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
-                />
-                <img src="/members/bugvi.png" />
-            </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12">
-                <MemberInfo
-                    name="Sahibzada Hassan Mansoor Bugvi"
-                    title="Convenor"
-                    quote="Being a part of LDF has been an incredible honor."
-                    email="hmbugvi@gmail.com"
-                />
-                <img src="/members/bugvi.png" />
-            </div>
-        </section>
         <Footer />
     </main>
 </Layout>

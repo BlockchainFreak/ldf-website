@@ -79,6 +79,6 @@ function SpeakerCard({ name, image, title }: SpeakerCardProps) {
                     <p className="text-xl">{title}</p>
                 </div>
             </CardContent>
-        </Card >
+        </Card>
     )
 }

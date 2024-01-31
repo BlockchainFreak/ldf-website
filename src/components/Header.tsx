@@ -51,7 +51,9 @@ const Navigation = () => {
                 }
             </div>
 
-            <div className="hidden lg:flex lg:flex-row lg:space-x-8 font-secondary">Register Now</div>
+            <a href="https://cardpay-web.vercel.app/events" target="_blank">
+                <div className="hidden lg:flex lg:flex-row lg:space-x-8 font-secondary px-4 py-2 hover:bg-white hover:text-black rounded-md">Register Now</div>
+            </a>
         </div>
     );
 };

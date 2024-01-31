@@ -101,12 +101,6 @@ export default function AgendaTimeline() {
                                 </tbody>
                             </table>
                         </animated.div>
-                        {/* <div>
-                            * These sessions will be live streamed for virtual attendees
-                            <br />
-                            All times listed in Pacific Daylight Time and subject to
-                            change
-                        </div> */}
                     </div>
                 </div>
             </div>
