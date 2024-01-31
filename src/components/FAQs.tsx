@@ -38,25 +38,23 @@ const data = [
 
 export default function FAQs() {
     return (
-        <section className="flex flex-col items-center px-16 py-12 font-georgia bg-[#f2f2f2]">
+        <section className="flex flex-col items-center px-4 py-12 font-georgia bg-[#f2f2f2]">
             <div className="w-full gap-2 mb-12">
                 <p className="text-4xl mb-4">FAQs</p>
                 <p className="text-2xl text-zinc-500">All your most pressing questions, answered.</p>
             </div>
-            <div className="mx-12">
-                <Accordion type="single" collapsible className="font-SpaceGrotesk w-96 lg:w-[64rem]">
-                    {
-                        data.map((item, index) => (
-                            <AccordionItem className="bg-white px-4 first:rounded-t-3xl last:rounded-b-3xl"
-                                key={`item-${index}`} value={`item-${index}`}
-                            >
-                                <AccordionTrigger className="font-medium">{item.question}</AccordionTrigger>
-                                <AccordionContent>{item.answer}</AccordionContent>
-                            </AccordionItem>
-                        ))
-                    }
-                </Accordion>
-            </div>
+            <Accordion type="single" collapsible className="font-SpaceGrotesk w-full lg:w-[64rem]">
+                {
+                    data.map((item, index) => (
+                        <AccordionItem className="bg-white px-4 first:rounded-t-3xl last:rounded-b-3xl"
+                            key={`item-${index}`} value={`item-${index}`}
+                        >
+                            <AccordionTrigger className="font-medium">{item.question}</AccordionTrigger>
+                            <AccordionContent>{item.answer}</AccordionContent>
+                        </AccordionItem>
+                    ))
+                }
+            </Accordion>
         </section>
     )
 }

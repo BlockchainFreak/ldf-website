@@ -8,7 +8,7 @@ export default function Footer() {
                         <img src="/ldf-logo.svg" alt="Logo" className="h-12" />
                             <p className="text-gray-300 text-lg font-normal">Tech. Design. Reimagine.</p>
                             <div className="flex space-x-2">
-                                <a href="#" className="text-white">
+                                <a href="https://www.instagram.com/index.lums/" className="text-white" target="_blank">
                                     <img src="/instagram.svg" alt="Instagram" className="h-9" />
                                 </a>
 
@@ -16,7 +16,7 @@ export default function Footer() {
                                     <img src="/twitterx.svg" alt="X" className="h-8" />
                                 </a>
 
-                                <a href="#" className="text-white">
+                                <a href="https://www.linkedin.com/company/index-the-design-and-innovation-society" className="text-white"  target="_blank">
                                     <img src="/linkedin.svg" alt="LinkedIn" className="h-9" />
                                 </a>
 
@@ -44,9 +44,7 @@ export default function Footer() {
                     <a href="#"> Privacy Policy </a>
                     <a href="#"> Contact us</a>
                 </div>
-
             </div>
-
         </footer>
 
     )
