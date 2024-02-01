@@ -4,7 +4,7 @@ import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuIte
 const tabs = [
     { name: 'Info', href: '/#' },
     { name: 'Talks', href: '/#talks' },
-    { name: 'Speakers', href: '/#speakers' },
+    { name: 'Speakers', href: '/speakers' },
     { name: 'Convention', href: '/#events' },
     { name: 'Sponsors', href: '/#sponsors' },
     { name: 'Contact Us', href: '/contact' },
@@ -16,6 +16,19 @@ const Navigation = () => {
         <div className="flex flex-row lg:space-x-8 py-3 px-6 lg:px-32 justify-between items-center bg-black text-white">
             <a href='/'>
                 <img src="/ldf-logo.svg" className="w-24" />
+            </a>
+
+            {/* Tabs for larger screens */}
+            <div className="hidden lg:flex lg:flex-row lg:space-x-8 lg:justify-center lg:px-12 font-secondary">
+                {
+                    tabs.map((tab) => (
+                        <a key={tab.name} href={tab.href}>{tab.name}</a>
+                    ))
+                }
+            </div>
+
+            <a href="https://cardpay-web.vercel.app/events" target="_blank">
+                <div className="hidden lg:flex lg:flex-row lg:space-x-8 font-secondary px-4 py-2 hover:bg-white hover:text-black rounded-md">Register Now</div>
             </a>
 
             {/* Dropdown for small screens */}
@@ -36,24 +49,13 @@ const Navigation = () => {
                         }
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
-                            Register Now
+                            <a href="https://cardpay-web.vercel.app/events">
+                                Register Now
+                            </a>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
-
-            {/* Tabs for larger screens */}
-            <div className="hidden lg:flex lg:flex-row lg:space-x-8 lg:justify-center lg:px-12 font-secondary">
-                {
-                    tabs.map((tab) => (
-                        <a key={tab.name} href={tab.href}>{tab.name}</a>
-                    ))
-                }
-            </div>
-
-            <a href="https://cardpay-web.vercel.app/events" target="_blank">
-                <div className="hidden lg:flex lg:flex-row lg:space-x-8 font-secondary px-4 py-2 hover:bg-white hover:text-black rounded-md">Register Now</div>
-            </a>
         </div>
     );
 };

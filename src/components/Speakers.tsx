@@ -12,27 +12,187 @@ const speakers = [
     {
         name: "Syed Babar Ali",
         image: "/SBA.png",
-        title: "Businessman, Philanthropist, Educationist"
+        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan"
     },
     {
-        name: "Syed Babar Ali",
+        name: "Dr. Suleman Shahid",
         image: "/SBA.png",
-        title: "Businessman, Philanthropist, Educationist"
+        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan"
     },
     {
-        name: "Syed Babar Ali",
+        name: "Faizan Ahmed",
         image: "/SBA.png",
-        title: "Businessman, Philanthropist, Educationist"
+        title: "The Art of Storytelling"
     },
     {
-        name: "Syed Babar Ali",
+        name: "Bilal Tanweer",
         image: "/SBA.png",
-        title: "Businessman, Philanthropist, Educationist"
+        title: "The Art of Storytelling"
     },
     {
-        name: "Syed Babar Ali",
+        name: "Khadija Shafiq",
         image: "/SBA.png",
-        title: "Businessman, Philanthropist, Educationist"
+        title: "Designing a Vertical Pakistan"
+    },
+    {
+        name: "Ammar Rasool",
+        image: "/SBA.png",
+        title: "Designing a Cinema of Resistance"
+    },
+    {
+        name: "Usama Lali",
+        image: "/SBA.png",
+        title: "Designing a Cinema of Resistance"
+    },
+    {
+        name: "Dr. Murtaza Taj",
+        image: "/SBA.png",
+        title: "Preserving Pakistani Heritage Sites"
+    },
+    {
+        name: "Dr. Ali Cheema",
+        image: "/SBA.png",
+        title: "Empowering Innovators: LUMS, ITU, BNU"
+    },
+    {
+        name: "Adnan Noor",
+        image: "/SBA.png",
+        title: "Empowering Innovators: LUMS, ITU, BNU"
+    },
+    {
+        name: "Moeed Yusuf",
+        image: "/SBA.png",
+        title: "Empowering Innovators: LUMS, ITU, BNU"
+    },
+    {
+        name: "Hassan Tahir Latif",
+        image: "/SBA.png",
+        title: "Publishing Personal Narratives"
+    },
+    {
+        name: "Mina Malik Hussain",
+        image: "/SBA.png",
+        title: "Publishing Personal Narratives"
+    },
+    {
+        name: "Imrana Ashraf",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women"
+    },
+    {
+        name: "Qasim Mehmood",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women"
+    },
+    {
+        name: "Maria Yzeul",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women"
+    },
+    {
+        name: "Nigham Arshad",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women"
+    },
+    {
+        name: "Haris Mehmood",
+        image: "/SBA.png",
+        title: "LUMS Kahani"
+    },
+    {
+        name: "Minahil Noor",
+        image: "/SBA.png",
+        title: "LUMS Kahani"
+    },
+    {
+        name: "Saim Rehman",
+        image: "/SBA.png",
+        title: "LUMS Kahani"
+    },
+    {
+        name: "Emil Hasnain",
+        image: "/SBA.png",
+        title: "LUMS Kahani"
+    },
+    {
+        name: "Dr Ali Usman Qasmi",
+        image: "/SBA.png",
+        title: "Lahore Kay Rastay"
+    },
+    {
+        name: "Ghazi Taimoor",
+        image: "/SBA.png",
+        title: "Lahore Kay Rastay"
+    },
+    {
+        name: "Zeerak Ahmad",
+        image: "/SBA.png",
+        title: "Humanizing Technology"
+    },
+    {
+        name: "Usama Waheed",
+        image: "/SBA.png",
+        title: "Humanizing Technology"
+    },
+    {
+        name: "Dr. Mohammad Zahid",
+        image: "/SBA.png",
+        title: "Cybersecurity in an AI Dominated Future"
+    },
+    {
+        name: "Hashim Mufti",
+        image: "/SBA.png",
+        title: "Cybersecurity in an AI Dominated Future"
+    },
+    {
+        name: "Uzair Hasnain",
+        image: "/SBA.png",
+        title: "Notion as a Tool For Learning Acceleration"
+    },
+    {
+        name: "Usman Aslam",
+        image: "/SBA.png",
+        title: "Notion as a Tool For Learning Acceleration"
+    },
+    {
+        name: "Saboor Akram",
+        image: "/SBA.png",
+        title: "A Picture is Worth a Thousand Prompts"
+    },
+    {
+        name: "Subhan Noor",
+        image: "/SBA.png",
+        title: "A Picture is Worth a Thousand Prompts"
+    },
+    {
+        name: "Imtiaz Khan",
+        image: "/SBA.png",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology"
+    },
+    {
+        name: "Yasir Rasool",
+        image: "/SBA.png",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology"
+    },
+    {
+        name: "Dr. Zafar Javed",
+        image: "/SBA.png",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology"
+    },
+    {
+        name: "Muhammad Ali Tariq",
+        image: "/SBA.png",
+        title: "Philosophy of Design Communities in Pakistan"
+    },
+    {
+        name: "Ali Imran Zuberi",
+        image: "/SBA.png",
+        title: "Philosophy of Design Communities in Pakistan"
+    },
+    {
+        name: "Nida Fatima Rizvi",
+        image: "/SBA.png",
+        title: "Philosophy of Design Communities in Pakistan"
     },
 ] satisfies SpeakerCardProps[]
 
@@ -41,8 +201,10 @@ export default function SpeakersSection() {
     return (
         <div className="flex flex-col gap-8 px-4 lg:px-16 text-white">
             <div className="flex justify-between">
-                <h2 className="text-4xl font-normal font-georgia">Keynote Speakers</h2>
-                <button className="bg-white py-4 px-12 text-lg font-semibold text-black rounded-[4rem]">View All Speakers →</button>
+                <h2 className="text-4xl font-normal font-georgia">Speakers</h2>
+                <a href="/speakers">
+                    <button className="bg-white py-4 px-12 text-lg font-semibold text-black rounded-[4rem]">View All Speakers →</button>
+                </a>
             </div>
             <hr />
             <Carousel className="w-full"

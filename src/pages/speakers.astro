@@ -1,0 +1,209 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SpeakerCard from "@/components/speakerCard.astro";
+import Header from "@/components/Header.tsx";
+import Footer from "@/components/Footer.astro";
+
+const speakers = [
+    {
+        name: "Syed Babar Ali",
+        image: "/SBA.png",
+        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan",
+    },
+    {
+        name: "Dr. Suleman Shahid",
+        image: "/SBA.png",
+        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan",
+    },
+    {
+        name: "Faizan Ahmed",
+        image: "/SBA.png",
+        title: "The Art of Storytelling",
+    },
+    {
+        name: "Bilal Tanweer",
+        image: "/SBA.png",
+        title: "The Art of Storytelling",
+    },
+    {
+        name: "Khadija Shafiq",
+        image: "/SBA.png",
+        title: "Designing a Vertical Pakistan",
+    },
+    {
+        name: "Ammar Rasool",
+        image: "/SBA.png",
+        title: "Designing a Cinema of Resistance",
+    },
+    {
+        name: "Usama Lali",
+        image: "/SBA.png",
+        title: "Designing a Cinema of Resistance",
+    },
+    {
+        name: "Dr. Murtaza Taj",
+        image: "/SBA.png",
+        title: "Preserving Pakistani Heritage Sites",
+    },
+    {
+        name: "Dr. Ali Cheema",
+        image: "/SBA.png",
+        title: "Empowering Innovators: LUMS, ITU, BNU",
+    },
+    {
+        name: "Adnan Noor",
+        image: "/SBA.png",
+        title: "Empowering Innovators: LUMS, ITU, BNU",
+    },
+    {
+        name: "Moeed Yusuf",
+        image: "/SBA.png",
+        title: "Empowering Innovators: LUMS, ITU, BNU",
+    },
+    {
+        name: "Hassan Tahir Latif",
+        image: "/SBA.png",
+        title: "Publishing Personal Narratives",
+    },
+    {
+        name: "Mina Malik Hussain",
+        image: "/SBA.png",
+        title: "Publishing Personal Narratives",
+    },
+    {
+        name: "Imrana Ashraf",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
+    },
+    {
+        name: "Qasim Mehmood",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
+    },
+    {
+        name: "Maria Yzeul",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
+    },
+    {
+        name: "Nigham Arshad",
+        image: "/SBA.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
+    },
+    {
+        name: "Haris Mehmood",
+        image: "/SBA.png",
+        title: "LUMS Kahani",
+    },
+    {
+        name: "Minahil Noor",
+        image: "/SBA.png",
+        title: "LUMS Kahani",
+    },
+    {
+        name: "Saim Rehman",
+        image: "/SBA.png",
+        title: "LUMS Kahani",
+    },
+    {
+        name: "Emil Hasnain",
+        image: "/SBA.png",
+        title: "LUMS Kahani",
+    },
+    {
+        name: "Dr Ali Usman Qasmi",
+        image: "/SBA.png",
+        title: "Lahore Kay Rastay",
+    },
+    {
+        name: "Ghazi Taimoor",
+        image: "/SBA.png",
+        title: "Lahore Kay Rastay",
+    },
+    {
+        name: "Zeerak Ahmad",
+        image: "/SBA.png",
+        title: "Humanizing Technology",
+    },
+    {
+        name: "Usama Waheed",
+        image: "/SBA.png",
+        title: "Humanizing Technology",
+    },
+    {
+        name: "Dr. Mohammad Zahid",
+        image: "/SBA.png",
+        title: "Cybersecurity in an AI Dominated Future",
+    },
+    {
+        name: "Hashim Mufti",
+        image: "/SBA.png",
+        title: "Cybersecurity in an AI Dominated Future",
+    },
+    {
+        name: "Uzair Hasnain",
+        image: "/SBA.png",
+        title: "Notion as a Tool For Learning Acceleration",
+    },
+    {
+        name: "Usman Aslam",
+        image: "/SBA.png",
+        title: "Notion as a Tool For Learning Acceleration",
+    },
+    {
+        name: "Saboor Akram",
+        image: "/SBA.png",
+        title: "A Picture is Worth a Thousand Prompts",
+    },
+    {
+        name: "Subhan Noor",
+        image: "/SBA.png",
+        title: "A Picture is Worth a Thousand Prompts",
+    },
+    {
+        name: "Imtiaz Khan",
+        image: "/SBA.png",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
+    },
+    {
+        name: "Yasir Rasool",
+        image: "/SBA.png",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
+    },
+    {
+        name: "Dr. Zafar Javed",
+        image: "/SBA.png",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
+    },
+    {
+        name: "Muhammad Ali Tariq",
+        image: "/SBA.png",
+        title: "Philosophy of Design Communities in Pakistan",
+    },
+    {
+        name: "Ali Imran Zuberi",
+        image: "/SBA.png",
+        title: "Philosophy of Design Communities in Pakistan",
+    },
+    {
+        name: "Nida Fatima Rizvi",
+        image: "/SBA.png",
+        title: "Philosophy of Design Communities in Pakistan",
+    },
+];
+---
+
+<Layout title="Lahore Design Festival">
+    <Header />
+    <main class="flex flex-col bg-black">
+        <section class="p-16 md:p-12">
+            <h1 class="text-4xl font-bold text-white mb-8">Speakers</h1>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+            >
+                {speakers.map((speaker) => <SpeakerCard {...speaker} />)}
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
