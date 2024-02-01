@@ -2,10 +2,10 @@ import React from 'react';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator } from '@/components/ui/dropdown-menu';
 
 const tabs = [
-    { name: 'Info', href: '/#' },
-    { name: 'Talks', href: '/#talks' },
+    { name: 'Home', href: '/#' },
+    // { name: 'Talks', href: '/#talks' },
     { name: 'Speakers', href: '/speakers' },
-    { name: 'Convention', href: '/#events' },
+    { name: 'Conventions', href: '/#events' },
     { name: 'Sponsors', href: '/#sponsors' },
     { name: 'Contact Us', href: '/contact' },
     { name: 'About Us', href: '/about' },
@@ -19,7 +19,7 @@ const Navigation = () => {
             </a>
 
             {/* Tabs for larger screens */}
-            <div className="hidden lg:flex lg:flex-row lg:space-x-8 lg:justify-center lg:px-12 font-secondary">
+            <div className="hidden lg:flex lg:flex-row lg:space-x-8 lg:justify-center lg:px-12 font-primary">
                 {
                     tabs.map((tab) => (
                         <a key={tab.name} href={tab.href}>{tab.name}</a>
@@ -28,7 +28,7 @@ const Navigation = () => {
             </div>
 
             <a href="https://cardpay-web.vercel.app/events" target="_blank">
-                <div className="hidden lg:flex lg:flex-row lg:space-x-8 font-secondary px-4 py-2 hover:bg-white hover:text-black rounded-md">Register Now</div>
+                <div className="hidden lg:flex lg:flex-row lg:space-x-8 px-4 py-2 hover:bg-white hover:text-black rounded-md font-primary">Register Now</div>
             </a>
 
             {/* Dropdown for small screens */}
@@ -50,7 +50,9 @@ const Navigation = () => {
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
                             <a href="https://cardpay-web.vercel.app/events">
-                                Register Now
+                                <span className="font-primary">
+                                    Register Now
+                                </span>
                             </a>
                         </DropdownMenuItem>
                     </DropdownMenuContent>

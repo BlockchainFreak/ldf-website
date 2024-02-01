@@ -1,7 +1,7 @@
 const events = [
     {
         name: "Visual Communication Convention",
-        image: "/sample-event-icon.svg",
+        image: "/vcc.svg",
         description: "Get hands-on technical product training with over 30 instructor-led courses and interactive labs covering the entire Webex portfolio.",
     },
     {
@@ -39,9 +39,9 @@ function EventConventionCard({ name, image, description }: EventConventionCardPr
         <div className="flex flex-col gap-4 bg-white p-6 flex-shrink-0 text-black rounded-3xl">
             <h3 className="text-3xl font-normal">{name}</h3>
             <p className="text-lg text-gray-500">{description}</p>
-            <div className="mx-32">
+            {/* <div className="mx-32">
                 <img src={image}/>
-            </div>
+            </div> */}
         </div>
     )
 }

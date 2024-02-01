@@ -5,46 +5,135 @@ const dates = ["02", "03", "04"];
 
 const timelineData = [
     [
-        { time: "7:30 am - 9:00 am", label: "Breakfast" },
         {
-            time: "8:00 am - 5:30 pm",
-            label: "Hands on Labs & Ask the Experts bar",
+            "TimeSpan": 2,
+            "Time": "14:00 - 15:00",
+            "Auditorium": "9-B2",
+            "Panel Name": "Designing Opportunity: Accessibility of Higher Education in Pakistan",
+            "Panelists": "Syed Babar Ali, Dr. Suleman Shahid",
+            "Moderator": "Taneer Jannat"
         },
         {
-            time: "9:00 am - 10:45 am",
-            label: "Opening Keynote* - Feat, Sahibzada Hassan Mansoor Bugvi",
+            "Auditorium": "B2",
+            "Panel Name": "The Art of Storytelling",
+            "Panelists": "Faizan Ahmad, Bilal Tanweer",
+            "Moderator": "Salman Tausene Khwaja"
         },
-        { time: "10:45 am - 5:30 pm", label: "Solution Showcase and Expo" },
         {
-            time: "11:15 am - 5:00 pm",
-            label: "Breakout Sessions across 4 Tracks",
+            "TimeSpan": 2,
+            "Time": "16:00 - 17:00",
+            "Auditorium": "NIB",
+            "Panel Name": "Preserving Pakistani Heritage Sites",
+            "Panelists": "Dr. Murtaza Taj",
+            "Moderator": "Ibrahim Iftikhar"
         },
-        { time: "12:00 pm - 2:00 pm", label: "Lunch" },
         {
-            time: "6:00 pm - 10:00 pm",
-            label: "Dinner & Special Event w/ Alter Ego & DJ Graffiti",
+            "Auditorium": "SS",
+            "Panel Name": "Designing a Vertical Pakistan",
+            "Panelists": "Noor Maneka, Adhar Malik and Fatima Usman",
+            "Moderator": "Khadija Shafiq"
         },
+        {
+            "Time": "18:00 - 19:00",
+            "Auditorium": "SS",
+            "Panel Name": "Designing a Cinema of Resistance",
+            "Panelists": "Ammar Rasool, Usama Lali",
+            "Moderator": "Mashal Fatima Rizvi"
+        }
     ],
     [
-        { time: "7:30 am - 9:00 am", label: "Continental Breakfast" },
-        { time: "8:00 am - 4:00 pm", label: "Developer Workshops" },
-        { time: "9:15 am - 10:00 am", label: "Morning Keynote - Feat, Dr. Ayesha Khanna" },
-        { time: "10:15 am - 4:30 pm", label: "Tech Talks & Panels" },
-        { time: "12:00 pm - 1:30 pm", label: "Networking Lunch" },
-        { time: "4:30 pm - 6:00 pm", label: "Poster Sessions" },
-        { time: "7:00 pm - 9:00 pm", label: "Gala Dinner & Awards Ceremony" },
+        {
+            "Time": "12:00 - 13:00",
+            "Auditorium": "B3",
+            "Panel Name": "Empowering Innovators: LUMS, ITU, BNU",
+            "Panelists": "Dr. Ali Cheema, Adnan Noor, Moeed Yusuf",
+            "Moderator": "Taneer Jannat"
+        },
+        {
+            "Time": "13:00 - 14:00",
+            "Auditorium": "SS",
+            "Panel Name": "Beyond Degrees: Unlocking Potential in Pakistan",
+            "Panelists": "Engnr. Qurat ul Ain Memon",
+            "Moderator": "Ayesha Amir"
+        },
+        {
+            "Time": "14:00 - 15:00",
+            "Auditorium": "B2",
+            "Panel Name": "Publishing Personal Narratives",
+            "Panelists": "Hassan Tahir Latif, Mina Malik Hussain",
+            "Moderator": "Zain Alizai"
+        },
+        {
+            "TimeSpan": 2,
+            "Time": "16:00 - 17:00",
+            "Auditorium": "SS",
+            "Panel Name": "Designing Accessible Education in the Sciences: A Future for Women",
+            "Panelists": "Imrana Ashraf, Qasim Mehmood, Maria Yzuel, Nigum Arshed",
+            "Moderator": "Malaik Kabir"
+        },
+        {
+            "Auditorium": "NIB",
+            "Panel Name": "LUMS Kahani",
+            "Panelists": "Haris Mehmood, Minahil Noor, Saim Rehman, Emil Hasnain",
+            "Moderator": "Owais Sabri"
+        },
+        {
+            "Time": "18:00 - 19:00",
+            "Auditorium": "B2",
+            "Panel Name": "Lahore Kay Rastay",
+            "Panelists": "Dr Ali Usman Qasmi, Ghazi Taimoor",
+            "Moderator": "Musfirah Khurshid"
+        }
     ],
     [
-        { time: "7:30 am - 9:00 am", label: "Networking Breakfast" },
-        { time: "9:00 am - 12:00 pm", label: "Industry Roundtables" },
-        { time: "10:00 am - 3:00 pm", label: "Innovation Fair" },
-        { time: "12:00 pm - 1:00 pm", label: "Lunch Break" },
         {
-            time: "1:00 pm - 2:30 pm",
-            label: "Closing Keynote - Feat, Dr. Neil deGrasse Tyson",
+            "TimeSpan": 2,
+            "Time": "12:00 - 13:00",
+            "Auditorium": "SS",
+            "Panel Name": "Humanizing Technology",
+            "Panelists": "Zeerak Ahmad, Usama Waheed",
+            "Moderator": "Saad Hasnain"
         },
-        { time: "2:45 pm - 4:00 pm", label: "Final Networking & Goodbyes" },
-        { time: "4:00 pm - 4:30 pm", label: "Conference Wrap-up" },
+        {
+            "Auditorium": "B3",
+            "Panel Name": "Surviving the Start-Up Ecosystem of Pakistan",
+            "Panelists": "SadaPay, Cardpay, Pattern App, and LCE",
+            "Moderator": "Hashir Bin Nasir"
+        },
+        {
+            "TimeSpan": 2,
+            "Time": "14:00 - 15:00",
+            "Auditorium": "SS",
+            "Panel Name": "Cybersecurity in an AI Dominated Future",
+            "Panelists": "Dr. Mohammad Zahid, Hashim Mufti",
+            "Moderator": "Anam Tahir"
+        },
+        {
+            "Auditorium": "B2",
+            "Panel Name": "Notion as a Tool For Learning Acceleration",
+            "Panelists": "Uzair Hasnain, Usman Aslam",
+            "Moderator": "Arsalan Abid"
+        },
+        {
+            "TimeSpan": 3,
+            "Time": "16:00 - 17:00",
+            "Auditorium": "B2",
+            "Panel Name": "A Picture is Worth a Thousand Prompts",
+            "Panelists": "Saboor Akram, Subhan Noor",
+            "Moderator": "Laiba Shahid"
+        },
+        {
+            "Auditorium": "SS",
+            "Panel Name": "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
+            "Panelists": "Imtiaz Khan, Yasir Rasool, Dr. Zafar Javed",
+            "Moderator": "Ahmad Mukhtar Bhatti"
+        },
+        {
+            "Auditorium": "A-11",
+            "Panel Name": "Philosophy of Design Communities in Pakistan",
+            "Panelists": "FOF Team: Muhammad Ali Tariq, Ali Imran Zuberi, Nida Fatima Rizvi",
+            "Moderator": "Sahibzada Hassan Mansoor Bugvi, Maham Ahmad Bhimra"
+        }
     ],
 ];
 
@@ -63,7 +152,7 @@ export default function AgendaTimeline() {
     return (
         <section className="m-4 lg:m-16 flex flex-col gap-4 text-white">
             <div className="text-4xl font-normal font-georgia">AGENDA AT A GLANCE</div>
-            <div className="bg-black h-[40rem] w-full p-4 lg:p-12 bg-opacity-50 flex lg:justify-end">
+            <div className="bg-black min-h-[44rem] w-full p-4 lg:p-12 bg-opacity-50 flex lg:justify-end">
                 <div
                     className="w-[84%] flex gap-4 justify-normal lg:justify-between font-georgia pt-8 flex-col lg:flex-row"
                 >
@@ -91,10 +180,14 @@ export default function AgendaTimeline() {
                             <table className="w-96 lg:w-full overflow-scroll">
                                 <tbody>
                                     {
-                                        timelineData[selectedDate].map((slot) => (
-                                            <tr key={slot.time} className="border-b-2 border-violet-200 border-solid font-normal text-sm lg:text-md">
-                                                <td className="lg:py-4">{slot.time}</td>
-                                                <td className="lg:py-4 break-words max-w-32 lg:max-w-96">{slot.label}</td>
+                                        timelineData[selectedDate].map((slot, index) => (
+                                            <tr key={index} className="border-b-2 border-violet-200 border-solid font-normal text-sm lg:text-md">
+                                                {slot.Time && <td className="lg:py-4" rowSpan={slot.TimeSpan ?? 1}>{slot.Time}</td>}
+                                                <td className="lg:py-4 break-words max-w-32 lg:max-w-96 font-sans">{slot["Auditorium"]}</td>
+                                                <td className="lg:py-4 break-words max-w-32 lg:max-w-96">
+                                                    <p>{slot["Panel Name"]}</p>
+                                                    <p className="text-gray-400">{slot["Panelists"]}</p>
+                                                </td>
                                             </tr>
                                         ))
                                     }

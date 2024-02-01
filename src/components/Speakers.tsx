@@ -11,188 +11,203 @@ import Autoplay from "embla-carousel-autoplay"
 const speakers = [
     {
         name: "Syed Babar Ali",
-        image: "/SBA.png",
-        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan"
+        image: "/speakers/SBA.png",
+        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan",
     },
     {
         name: "Dr. Suleman Shahid",
-        image: "/SBA.png",
-        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan"
+        image: "/speakers/DrSuleman.jpg",
+        title: "Designing Opportunity: Accessibility of Higher Education in Pakistan",
     },
     {
         name: "Faizan Ahmed",
-        image: "/SBA.png",
-        title: "The Art of Storytelling"
+        image: "/speakers/FaizanAhmed.jpg",
+        title: "The Art of Storytelling",
     },
     {
         name: "Bilal Tanweer",
-        image: "/SBA.png",
-        title: "The Art of Storytelling"
+        image: "/speakers/BilalTanweer.jpg",
+        title: "The Art of Storytelling",
     },
     {
-        name: "Khadija Shafiq",
-        image: "/SBA.png",
-        title: "Designing a Vertical Pakistan"
+        name: "Noor Maneka",
+        image: "/speakers/NoorManeka.png",
+        title: "Designing a Vertical Pakistan",
+    },
+    {
+        name: "Adhar Malik",
+        image: "/speakers/AdharMalik.png",
+        title: "Designing a Vertical Pakistan",
+    },
+    {
+        name: "Fatima Usman",
+        image: "/speakers/FatimaUsman.png",
+        title: "Designing a Vertical Pakistan",
     },
     {
         name: "Ammar Rasool",
-        image: "/SBA.png",
-        title: "Designing a Cinema of Resistance"
+        image: "/speakers/AmmarRasool.jpg",
+        title: "Designing a Cinema of Resistance",
     },
     {
         name: "Usama Lali",
-        image: "/SBA.png",
-        title: "Designing a Cinema of Resistance"
+        image: "/speakers/UsamaLali.jpg",
+        title: "Designing a Cinema of Resistance",
     },
     {
         name: "Dr. Murtaza Taj",
-        image: "/SBA.png",
-        title: "Preserving Pakistani Heritage Sites"
+        image: "/speakers/MurtazaTaj.jpg",
+        title: "Preserving Pakistani Heritage Sites",
     },
     {
         name: "Dr. Ali Cheema",
-        image: "/SBA.png",
-        title: "Empowering Innovators: LUMS, ITU, BNU"
+        image: "/speakers/AliCheema.jpg",
+        title: "Empowering Innovators: LUMS, ITU, BNU",
     },
     {
         name: "Adnan Noor",
-        image: "/SBA.png",
-        title: "Empowering Innovators: LUMS, ITU, BNU"
+        image: "/speakers/AdnanNoor.jpg",
+        title: "Empowering Innovators: LUMS, ITU, BNU",
     },
     {
         name: "Moeed Yusuf",
-        image: "/SBA.png",
-        title: "Empowering Innovators: LUMS, ITU, BNU"
+        image: "/speakers/MoeedYusuf.jpg",
+        title: "Empowering Innovators: LUMS, ITU, BNU",
+    },
+    {
+        name: "Engnr. Qurat ul Ain Memon",
+        image: "/speakers/QuratUlAinMemon.jpg",
+        title: "Beyond Degrees: Unlocking Potential in Pakistan",
     },
     {
         name: "Hassan Tahir Latif",
-        image: "/SBA.png",
-        title: "Publishing Personal Narratives"
+        image: "/speakers/HassanTahir.jpg",
+        title: "Publishing Personal Narratives",
     },
     {
         name: "Mina Malik Hussain",
-        image: "/SBA.png",
-        title: "Publishing Personal Narratives"
+        image: "/speakers/MinaMalik.jpg",
+        title: "Publishing Personal Narratives",
     },
     {
         name: "Imrana Ashraf",
-        image: "/SBA.png",
-        title: "Designing Accessible Education in the Sciences: A Future for Women"
+        image: "/speakers/ImranaAshraf.png",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
     },
     {
         name: "Qasim Mehmood",
-        image: "/SBA.png",
-        title: "Designing Accessible Education in the Sciences: A Future for Women"
+        image: "/speakers/Qasim.jpg",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
     },
     {
         name: "Maria Yzeul",
-        image: "/SBA.png",
-        title: "Designing Accessible Education in the Sciences: A Future for Women"
+        image: "/speakers/Maria.jpg",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
     },
     {
         name: "Nigham Arshad",
-        image: "/SBA.png",
-        title: "Designing Accessible Education in the Sciences: A Future for Women"
+        image: "/speakers/Nigum.jpg",
+        title: "Designing Accessible Education in the Sciences: A Future for Women",
     },
     {
         name: "Haris Mehmood",
-        image: "/SBA.png",
-        title: "LUMS Kahani"
+        image: "/speakers/HarisMahmood.jpeg",
+        title: "LUMS Kahani",
     },
     {
         name: "Minahil Noor",
-        image: "/SBA.png",
-        title: "LUMS Kahani"
+        image: "/speakers/Minahil.jpg",
+        title: "LUMS Kahani",
     },
     {
         name: "Saim Rehman",
-        image: "/SBA.png",
-        title: "LUMS Kahani"
+        image: "/speakers/Saim.jpg",
+        title: "LUMS Kahani",
     },
     {
         name: "Emil Hasnain",
-        image: "/SBA.png",
-        title: "LUMS Kahani"
+        image: "/speakers/Emil.jpg",
+        title: "LUMS Kahani",
     },
     {
         name: "Dr Ali Usman Qasmi",
-        image: "/SBA.png",
-        title: "Lahore Kay Rastay"
+        image: "/speakers/AliQasmi.jpeg",
+        title: "Lahore Kay Rastay",
     },
     {
         name: "Ghazi Taimoor",
-        image: "/SBA.png",
-        title: "Lahore Kay Rastay"
+        image: "/speakers/GhaziTaimoor.jpeg",
+        title: "Lahore Kay Rastay",
     },
     {
         name: "Zeerak Ahmad",
-        image: "/SBA.png",
-        title: "Humanizing Technology"
+        image: "/speakers/Zeerak.jpeg",
+        title: "Humanizing Technology",
     },
     {
         name: "Usama Waheed",
-        image: "/SBA.png",
-        title: "Humanizing Technology"
+        image: "/speakers/UsamaWaheed.jpg",
+        title: "Humanizing Technology",
     },
     {
         name: "Dr. Mohammad Zahid",
-        image: "/SBA.png",
-        title: "Cybersecurity in an AI Dominated Future"
+        image: "/speakers/MuhammadZahid.png",
+        title: "Cybersecurity in an AI Dominated Future",
     },
     {
         name: "Hashim Mufti",
-        image: "/SBA.png",
-        title: "Cybersecurity in an AI Dominated Future"
+        image: "/speakers/placeholder.webp",
+        title: "Cybersecurity in an AI Dominated Future",
     },
     {
         name: "Uzair Hasnain",
-        image: "/SBA.png",
-        title: "Notion as a Tool For Learning Acceleration"
+        image: "/speakers/UzairHasnain.png",
+        title: "Notion as a Tool For Learning Acceleration",
     },
     {
         name: "Usman Aslam",
-        image: "/SBA.png",
-        title: "Notion as a Tool For Learning Acceleration"
+        image: "/speakers/UsmanAslam.png",
+        title: "Notion as a Tool For Learning Acceleration",
     },
     {
         name: "Saboor Akram",
-        image: "/SBA.png",
-        title: "A Picture is Worth a Thousand Prompts"
+        image: "/speakers/Saboorayy.jpg",
+        title: "A Picture is Worth a Thousand Prompts",
     },
     {
         name: "Subhan Noor",
-        image: "/SBA.png",
-        title: "A Picture is Worth a Thousand Prompts"
+        image: "/speakers/SubhanNoor.jpg",
+        title: "A Picture is Worth a Thousand Prompts",
     },
     {
         name: "Imtiaz Khan",
-        image: "/SBA.png",
-        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology"
+        image: "/speakers/Imtiaz.jpg",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
     },
     {
         name: "Yasir Rasool",
-        image: "/SBA.png",
-        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology"
+        image: "/speakers/YasirRasool.jpg",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
     },
     {
         name: "Dr. Zafar Javed",
-        image: "/SBA.png",
-        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology"
+        image: "/speakers/ZafarJaved.jpg",
+        title: "Transforming Supply Chain: Ethical Fashion & Conscious Consumption through Blockchain Technology",
     },
     {
         name: "Muhammad Ali Tariq",
-        image: "/SBA.png",
-        title: "Philosophy of Design Communities in Pakistan"
+        image: "/speakers/MuhammadAliTariq.png",
+        title: "Philosophy of Design Communities in Pakistan",
     },
     {
         name: "Ali Imran Zuberi",
-        image: "/SBA.png",
-        title: "Philosophy of Design Communities in Pakistan"
+        image: "/speakers/AliImranZuberi.png",
+        title: "Philosophy of Design Communities in Pakistan",
     },
     {
         name: "Nida Fatima Rizvi",
-        image: "/SBA.png",
-        title: "Philosophy of Design Communities in Pakistan"
+        image: "/speakers/Nida_Photo.png",
+        title: "Philosophy of Design Communities in Pakistan",
     },
 ] satisfies SpeakerCardProps[]
 

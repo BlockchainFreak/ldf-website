@@ -6,33 +6,110 @@ import MemberInfo from "@/components/MemberInfo.astro";
 ---
 
 <Layout title="Lahore Design Festival">
-    <main class="flex flex-col bg-black text-white">
+    <main class="flex flex-col bg-zinc-950 text-white font-primary">
         <Header />
         <div class="mt-12">
-            <h1 class="text-6xl font-black font-secondary text-center">Contact Us</h1>
+            <h1 class="text-6xl font-black font-primary text-center">
+                Contact Us
+            </h1>
         </div>
 
-        <!-- Vice Presidents Section -->
-        <section class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96">
+        <!-- Executive Counccil Section -->
+        <section
+            class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96"
+        >
             <div class="flex justify-center">
-                <h2 class="bg-white px-6 py-2 rounded-3xl w-48 text-black font-bold font-secondary text-center">Vice Presidents</h2>
+                <h2
+                    class="bg-white px-6 py-2 rounded-3xl w-48 text-black font-bold font-primary text-center"
+                >
+                    Executive Council
+                </h2>
             </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
+            <div
+                class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12"
+            >
+                <MemberInfo
+                    name="Danish Nadeem"
+                    title="Vice President - Communications"
+                    quote="Setting LDF a legacy for INDEX"
+                    email=""
+                />
+                <div class="square-aspect w-64">
+                    <img src="/members/danish.jpg" />
+                </div>
+            </div>
+            <div
+                class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12"
+            >
+                <MemberInfo
+                    name="Rabia Zahid"
+                    title="Vice President - Events"
+                    quote="This event is finally over, and I am free"
+                    email=""
+                />
+                <div class="square-aspect w-64">
+                    <img src="/members/rabia.jpg" />
+                </div>
+            </div>
+            <div
+                class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12"
+            >
+                <MemberInfo
+                    name="Iman Ali"
+                    title="Treasurer"
+                    quote="Yeh sab meri EC ka kamal hai -   All things done"
+                    email=""
+                />
+                <div class="square-aspect w-64">
+                    <img src="/members/iman.jpeg" />
+                </div>
+            </div>
+            <div
+                class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12"
+            >
+                <MemberInfo
+                    name="Bisma Naveed"
+                    title="General Secretary"
+                    quote="one line - haters will say the event is photoshopped"
+                    email=""
+                />
+                <div class="square-aspect w-64">
+                    <img src="/members/bisma.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Convenors Section -->
+        <section
+            class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96"
+        >
+            <div class="flex justify-center">
+                <h2
+                    class="bg-white px-6 py-2 rounded-3xl w-48 text-black font-bold font-primary text-center"
+                >
+                    Convenors
+                </h2>
+            </div>
+            <div
+                class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12"
+            >
                 <MemberInfo
                     name="Sahibzada Hassan Mansoor Bugvi"
                     title="Convenor"
-                    quote="Being a part of LDF has been an incredible honor."
+                    quote="Serving LDF has been an incredible honor."
                     email="hmbugvi@gmail.com"
                 />
                 <div class="square-aspect w-64">
                     <img src="/members/bugvi.png" />
                 </div>
             </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12">
+            <div
+                class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12"
+            >
                 <MemberInfo
                     name="Maham Bhimra"
                     title="Convenor"
-                    quote="Being a part of LDF has been an incredible honor."
+                    quote="Ham hain LDF, aur LDF hai ham."
                     email=""
                 />
                 <div class="square-aspect w-64">
@@ -40,36 +117,6 @@ import MemberInfo from "@/components/MemberInfo.astro";
                 </div>
             </div>
         </section>
-
-        <!-- Convenors Section -->
-        <section class="flex flex-col gap-16 text-white font-primary my-16 mx-8 md:mx-48 lg:mx-96">
-            <div class="flex justify-center">
-                <h2 class="bg-white px-6 py-2 rounded-3xl w-48 text-black font-bold font-secondary text-center">Convenors</h2>
-            </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row justify-between items-center gap-12">
-                <MemberInfo
-                    name="Danish Nadeem"
-                    title="Vice President - Communications"
-                    quote="Being a part of LDF has been an incredible honor."
-                    email=""
-                />
-                <div class="square-aspect w-64">
-                    <img src="/members/danish.jpg" />
-                </div>
-            </div>
-            <div class="w-ful flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-12">
-                <MemberInfo
-                    name="Rabia Zahid"
-                    title="Vice President - Events"
-                    quote="Being a part of LDF has been an incredible honor."
-                    email=""
-                />
-                <div class="square-aspect w-64">
-                    <img src="/members/rabia.png" />
-                </div>
-            </div>
-        </section>
-
         <Footer />
     </main>
 </Layout>
